@@ -3,12 +3,14 @@ import '../NewsItem.css'
 //component
 class NewsItem extends Component{
     render(){
+        console.log(this.props);
+        const {title, description} = this.props;
         return (
             //tek div icerisinde olmali hersey
             <div>
-                <h1 className="title">Hello React</h1>
+                <h1 className="title">{ this.props.title }</h1>
                 <p>
-                    Deneme yazısı
+                    { description }
                 </p>
 
                 <label htmlFor=""></label>
