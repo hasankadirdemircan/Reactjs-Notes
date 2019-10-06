@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import NewsItem from './NewsItem';
+import NewsForm from './NewsForm';
 
 class News extends Component {
     static propTypes = {
@@ -19,8 +20,8 @@ class News extends Component {
         const title = "react js";
         const description = "react description"
         let nameElement = <div>demircan</div>
-
-       const elements =  this.props.news.map(news => 
+        console.log(this.props.addNews);
+        const elements =  this.props.news.map(news => 
         <NewsItem
         key = {news.id}
         newsData = {news}
@@ -30,6 +31,7 @@ class News extends Component {
             <div>
                { elements }
                 {this.props.name}
+                <NewsForm addNews={this.props.addNews}/>
             </div>
         )
     }
