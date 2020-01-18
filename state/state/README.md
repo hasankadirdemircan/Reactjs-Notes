@@ -7,14 +7,16 @@
  
  Stateless -> Stateless değişmeyen component'lerde kullanılır , Footer, Header gibi. (React'ın diff algoritmasına dahil edilmez ve hızlı olur.), state değiştireceği bir render methodu olmaz.
  
- # Screenshot
+ ### Screenshot
  </p>
 <p align="center">
   <a href="https://user-images.githubusercontent.com/34090058/72662787-6e1a9880-39fc-11ea-8eb7-2aaa2a24370f.png">
     <img alt="Techs" title="Techs" src="https://user-images.githubusercontent.com/34090058/72662787-6e1a9880-39fc-11ea-8eb7-2aaa2a24370f.png"width="400">
   </a>
 </p>
+
 # Code Example
+
  Statefull -> Counter.js
  ```js
 //stateful -> state olan component
