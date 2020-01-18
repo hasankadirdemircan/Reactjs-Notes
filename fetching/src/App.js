@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import axios from 'axios';
+
 class App extends Component {
   state = {
     users: [],
@@ -10,14 +12,23 @@ class App extends Component {
   //api cagirimlari icin en uygun yapi.
   componentDidMount() {
     setTimeout(() => {
-      fetch('https://jsonplaceholder.typicode.com/users')
+      axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(data => data.data )
+      .then(users => {
+        this.setState({
+          users,
+          isLoading: false
+        })
+      })
+      // with fetch
+      /* fetch('https://jsonplaceholder.typicode.com/users')
       .then(data => data.json())
       .then(users => {
         this.setState({
           users,
           isLoading: false
         })
-      }) 
+      })  */
     }, 3000);
    
   }
