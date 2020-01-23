@@ -8,7 +8,7 @@ Reactjs öğrenirken konu başlıklarıyla, yapılarla ilgili yaptığım örnek
 - [State](#state)
 
 ## Component
-- [Example] (https://github.com/hasankadirdemircan/Reactjs-Notes/tree/master/component/myapp)
+- [Example](https://github.com/hasankadirdemircan/Reactjs-Notes/tree/master/component/myapp)
 
 ## State
-- [Example] (https://github.com/hasankadirdemircan/Reactjs-Notes/tree/master/state/state)
+- [Example](https://github.com/hasankadirdemircan/Reactjs-Notes/tree/master/state/state)
